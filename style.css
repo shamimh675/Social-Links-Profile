@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+body{
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  background-color: hsl(0, 0%, 8%);
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-card {
+  width: 100%;
+  max-width: 410px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 12%);
+}
+.card-avatar img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+.card-heading h1{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: .65rem;
+}
+.card-heading h5{
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 1.75rem;
+}
+.card-heading p{
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.card-social-btn a{
+  display: block;
+  background-color: hsl(0, 0%, 20%);
+  padding: 1rem 7rem;
+  border-radius: .5rem;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: .4s;
+}
+.card-social-btn a:not(:last-child){
+  margin-bottom: 1rem;
+}
+.card-social-btn a:hover{
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+@media (width < 480px){
+  main{
+    margin: 1rem;
+  }
+  .card-social-btn a{
+    padding: 1rem 4rem;
+  }
+}
+@media (width < 280px){
+  .card-social-btn a{
+    padding: 1rem 2rem;
+  }
+}
